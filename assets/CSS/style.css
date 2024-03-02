@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+/* =======common============ */
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 68px);
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+}
+/* =======header======= */
+.header .menu{
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+.header .logo{
+    padding-right: 235px;
+}
+.header .Group{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 177px;
+    min-width: 446px;
+    height: 24px;
+
+}
+.header .group-item{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #2F3A3B;
+}
+.header .group-item.active,
+.header .group-item:hover{
+    text-shadow: 1px 0 0 currentColor;
+    
+}
+.header .group-item+.group-item{
+    padding-left: 39px;
+}
+.header .btn-group{
+    display: flex; 
+    gap: 24px;
+    align-items: center;
+}
+.header .btn-group .btn-Sin{
+    color: #494949;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+    width: 53px;
+    height: 24px; 
+}
+.header .btn-group .btn-Sup a{
+    width: 108px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #1EBFC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 12px;
+    color: #1EBFC1;
+    ;
+}
