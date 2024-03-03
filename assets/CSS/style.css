@@ -395,7 +395,9 @@ a{
 /* =====popular ===*/
 
 .popular .body-course{
-    padding: 130px 0 0;   
+    padding: 130px 0 0;
+    width: 1171px;
+    height: 778px;   
 }
 .popular .row-top{
     display: flex;
@@ -483,4 +485,30 @@ a{
     background: #1EBFC1;
     margin: 0 10px;
     display: inline-block;
+}
+/* countdown */
+.countdown{
+    margin-top: 389px;
+}
+.countdown .body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 862px;
+    /* background: aqua; */
+  }
+.countdown .countdown-list{
+    display: flex;
+    justify-content: space-between;
+}
+.countdown .countdown-list .static{
+    color: #0D1111; 
+    font-size: 6.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 11px;
+    text-align: center;
+}
+.countdown .countdown-list .desc{
+    text-align: center;
 }
