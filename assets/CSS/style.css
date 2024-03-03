@@ -241,8 +241,8 @@ a{
 
 .hero .schecules{
     position: absolute;
-    top: 700px;
-    left: 890px;
+    top: 450px;
+    left: -60px;
     background: #FEFEFD;
     width: 124px;
     height: 132px;
@@ -276,8 +276,8 @@ a{
 }
 .hero .avatar-block{
     position: absolute;
-    bottom: 120px;
-    right: 220px;
+    bottom: 40px;
+    right: 40px;
     border-radius: 24px;
     background: #fefefd;
     box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
@@ -324,16 +324,16 @@ a{
     line-height: normal;
 
   }  
-  .hero .ava-list .ava.one{
+.ava.one{
     background: orange;
   }
-  .hero .ava-list .ava.two{
+ .ava.two{
     background: #1EBFC1;
   }
-  .hero .ava-list .ava.three{
+.ava.three{
     background: plum;
   }
-  .hero .ava-list .ava.four{
+.ava.four{
     background: #FF8282;
   }
   /* =====features===== */
