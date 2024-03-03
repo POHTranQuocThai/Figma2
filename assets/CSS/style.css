@@ -28,6 +28,13 @@ a{
     color: var(--color);
     
 }
+.label{
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+}
 .btn{
     width: 186px;
     height: 68px;
@@ -40,6 +47,7 @@ a{
     opacity: 0.9;
 }
 /* =======header======= */
+
 .header.fixed{
     z-index: 1;
     position: sticky; 
@@ -108,7 +116,14 @@ a{
     color: white;
     transition: 0.3s;
 }
-.header .body-left{
+/* ==========hero============= */
+.hero{
+    width: 1440px;
+    height: 860px;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+.hero .body-left{
     width: 40%;
     height: 445px;
     border-radius: 14px;
@@ -116,7 +131,7 @@ a{
     padding-top: calc(243px - 150px);
 
 }
-.header .body-left .desc.note{
+.hero .body-left .desc.note{
     display: inline;
     font-size: 1.4rem;
     font-weight: 400;
@@ -124,7 +139,7 @@ a{
     color: #767E7E;
 
 }
-.header .body-left .label{
+.hero .body-left .label{
     width: 458px;
     height: 144px;
     font-size: 6.2rem;
@@ -133,50 +148,52 @@ a{
     color:  #0D1111;
     padding: 18px 0 46px;
 }
-.header .btn.btn-start{
+.hero .btn-start{
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 27px;
 }
-.header .desc{
+.hero .desc{
     width: 374px;
     height: 96px;
     margin: 46px 0 52px;
 }
-.header .action{
+.hero .action{
     display: flex;
     align-items: center;
     
 }
-.header .action .active{
+.hero .action .active{
     position: absolute;
     left: 400px;
-    bottom: 125px;
+    bottom: -105px;
 }
-.header .action .active:hover{
+.hero .action .active:hover{
     box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
     color: #fff;
     transition: 0.10s;
     cursor: pointer;
 }
-.header .body{
+.hero .body{
     display: flex;
-    padding: 150px 0 79px;
+    padding: 150px 0 0;
     gap: 136px;
 }
-.header .body-right{
+.hero .body-right{
     width: 60%;
     background: #E0F7F6;
     position: relative;
+    margin-bottom: 79px;
    
 }
-.header .body-right img{
+.hero .body-right img{
     width: 576px;
     height: 631px;
     object-fit: cover;
     
+    
 }
-.header .body-right .field{
+.hero .body-right .field{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,13 +208,13 @@ a{
     gap: 16px;
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
 }
-.header .body-right .field img{
+.hero .body-right .field img{
     width: 36px;
     height: 40px;
     position: relative;
     background: #FF8282;
 }
-.header .coures .desc{
+.hero .coures .desc{
     font-size: 1.0rem;
     font-weight: 500;
     line-height: 15px;
@@ -207,7 +224,7 @@ a{
     padding: 5px 0 5px;
 } 
 
-.header .schecules{
+.hero .schecules{
     position: absolute;
     top: 700px;
     left: 890px;
@@ -219,21 +236,21 @@ a{
     text-align: center;
    
 }
-.header .schecules .title{
+.hero .schecules .title{
     color: #0D1111;
     font-size: 1rem;
     font-weight: 500;
     padding: 16px 35px 0;
     
 }
-.header .schecules .group-icon .icon:first-child{
+.hero .schecules .group-icon .icon:first-child{
     margin: 16px 25px 0;
 }
-.header .schecules .group-icon .icon{
+.hero .schecules .group-icon .icon{
     width: 74px;
     height: 6px;
 }
-.header .schecules span{
+.hero .schecules span{
     margin: 16px 49px 23px;
     width: 26px;
     height: 6px;
@@ -242,7 +259,7 @@ a{
     display: flex;
     flex-direction: column;   
 }
-.header .avatar-block{
+.hero .avatar-block{
     position: absolute;
     bottom: 120px;
     right: 220px;
@@ -252,22 +269,22 @@ a{
     width: 207px;
     height: 90px;
 }
-.header .avatar-block .ava-list{
+.hero .avatar-block .ava-list{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header .ava-list .ava{
+.hero .ava-list .ava{
     margin-top: 8px;
     margin-left: -7px;
     width: 33px;
     height: 33px;
     border-radius: 50%;
 }
-.header .ava-list .ava:first-child {
+.hero .ava-list .ava:first-child {
     margin-left: 0;
   }
-.header .avatar-block .detail {
+.hero .avatar-block .detail {
     display: inline-block;
     margin: 17px 35px 0;
     color: #0d1111;
@@ -278,13 +295,13 @@ a{
     width: 100px;
     height: 15px;
   }
-.header .avatar-block .avar-more {
+.hero .avatar-block .avar-more {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #1ebfc1;
   }
-.header .avar-more span {
+.hero .avar-more span {
     color: #fff;
     text-align: center;
     font-size: 1rem;
@@ -292,15 +309,79 @@ a{
     line-height: normal;
 
   }  
-  .header .ava-list .ava.one{
+  .hero .ava-list .ava.one{
     background: orange;
   }
-  .header .ava-list .ava.two{
+  .hero .ava-list .ava.two{
     background: #1EBFC1;
   }
-  .header .ava-list .ava.three{
+  .hero .ava-list .ava.three{
     background: plum;
   }
-  .header .ava-list .ava.four{
+  .hero .ava-list .ava.four{
     background: #FF8282;
   }
+  /* =====features===== */
+
+ .features .body{
+    height: 559px;
+    margin-top: 130px;
+ }
+ .features .top-text{
+    width: 591px;
+    height: 220px;
+    flex-shrink: 0;
+    margin-bottom: 80px;
+ }
+ .features .top-text .note{
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 18px;
+    display: inline-block;
+ }
+.features .top-text .desc{
+    margin-top: 18px;
+}
+
+.features .bot-feature{
+    display: flex;
+    justify-content: center;
+    gap: 209px;
+    width: 89%;
+    height: 259px;
+    flex-shrink: 0;
+}
+.features .bot-feature .item .desc{
+    color: #9DA6A5;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.69; /* 168.75% */
+}
+
+.features .bot-feature .item.item-1{
+    width: 168px;
+    height: 259px;
+    flex-shrink: 0;
+}
+.features .bot-feature .item.item-2{
+    width: 223px;
+    height: 259px;
+    flex-shrink: 0;
+}
+.features .item.item-3{
+    width: 224px;
+    height: 259px;
+    flex-shrink: 0;
+}
+.features .bot-feature .title{
+    color: #0D1111;
+    font-size: 2.0rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 26px 0 16px;
+}
