@@ -46,6 +46,15 @@ a{
 .btn:hover {
     opacity: 0.9;
 }
+.note{
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 18px;
+    display: inline-block;
+ }
 /* =======header======= */
 
 .header.fixed{
@@ -57,6 +66,7 @@ a{
     padding: 52px 0 0;
     display: flex;
     align-items: center;
+    background: #FFF;
 }
 .header .logo{
     padding-right: 235px;
@@ -78,10 +88,14 @@ a{
     line-height: 24px;
     color: #2F3A3B;
 }
+
 .header .group-item.active,
 .header .group-item:hover{
     text-shadow: 1px 0 0 currentColor;
     
+}
+.header .btn-group .btn-Sin:hover{
+    text-shadow: 1px 0 0 currentColor;
 }
 .header .group-item+.group-item{
     padding-left: 39px;
@@ -111,6 +125,7 @@ a{
     color: #1EBFC1;
     background: #ffff;
 }
+
 .header .btn-group .btn-Sup a:hover{
     background: #1ebfc1;
     color: white;
@@ -333,15 +348,7 @@ a{
     flex-shrink: 0;
     margin-bottom: 80px;
  }
- .features .top-text .note{
-    color: #767E7E;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 18px;
-    display: inline-block;
- }
+
 .features .top-text .desc{
     margin-top: 18px;
 }
@@ -384,4 +391,96 @@ a{
     font-weight: 600;
     line-height: normal;
     padding: 26px 0 16px;
+}
+/* =====popular ===*/
+
+.popular .body-course{
+    padding: 130px 0 0;   
+}
+.popular .row-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0 79px;
+}
+.popular .row-top .desc{
+    width: 525px;
+}
+.popular .row-top .all-course{
+    text-decoration: underline;
+    color: #1EBFC1;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+/* course-card */
+.popular .course-list{
+    display: flex;
+    gap: 47px;
+}
+.popular .course-list .course-cards{
+    position: relative;
+}
+.popular .course-list .images{
+    width: 359px;
+    height: 393px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #D0EFED;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.popular .course-detail .heading-lv3{
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.popular .course-detail .cost span{
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.popular .course-detail .static,
+.popular .course-detail .cost,
+.popular .course-detail .desc{
+    color: #9DA6A5;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.popular .course-detail{
+    top: 325px;
+    left: 17px;
+    position: absolute;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    width: 325px;
+    height: 195px;
+    flex-shrink: 0;
+}
+.popular .course-detail .wrap-item{
+    padding: 18px 35px 29px 25px;   
+}
+.popular .course-detail .cost{
+    padding: 16px 0 6px;
+}
+.popular .course-detail .static{
+    padding-top: 18px;
+    margin-left: -10px;
+}
+.popular .course-detail span::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1EBFC1;
+    margin: 0 10px;
+    display: inline-block;
 }
